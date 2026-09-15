@@ -160,9 +160,12 @@ body {
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .popup-container {
-        width: 450px;
+        width: 200px;
         height: 400px;
+    }
+    .input {
+        width: 200px;
     }
 }
