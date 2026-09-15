@@ -159,3 +159,10 @@ body {
     font-family: "Nosifer";
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .popup-container {
+        width: 450px;
+        height: 400px;
+    }
+}
