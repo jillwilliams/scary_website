@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: red;
+    font-family: "Nosifer";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: url("https://cdn.cgdream.ai/_next/image?url=https%3A%2F%2Fapi.cgdream.ai%2Frails%2Factive_storage%2Fblobs%2Fredirect%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdzVYZlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--bb25078f1751375e18b235d17a2b43e190ab204d%2Faf8552f8-433a-4e5d-8047-e70cf0b81d31_0.png&w=1080&q=95");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    transition: 1s;
+}
+
+/* text: Welcome to our .... */
+.container h1 {
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 20px;
+}
+
+/* join button */
+.btn {
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-family: inherit;
+    background-color: red;
+    cursor: pointer;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #252525;
+    color: red;
+}
+
+/* blur the background */
+.active.container {
+    filter: blur(4px) brightness(90%);
+}
+
+/* change the container to see the popup better*/
+.popup-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url("images/skull2.png");
+    transition: 1s;
+}
+
+/* text: enter if you dare */
+.popup-container h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+/* text: will you enter... */
+.label {
+    color: red;
+    margin-bottom: 25px;
+}
+
+/* the enter email div */
+.input {
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* turn placeholder text to a different color */
+.input::placeholder {
+    color: black;
+}
+
+/* join button: make it have a pulse */
+.popup-btn {
+    opacity: 0.5;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    animation: 3s linear infinite myPulse;
+}
+
+@keyframes myPulse {
+    0% {
+        scale: 0.8;
+    }
+    25% {
+        scale: 1;
+    }
+    50% {
+        scale: 0.8;
+    }
+    75% {
+        scale: 1;
+    }
+    100% {
+        scale: 0.8;
+    }
+}
+
+.close-icon {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* hover over the x */
+.close-icon:hover {
+    color: white;
+}
+
+/* hide the popup container */
+.active.popup-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.input {
+    font-family: "Nosifer";
+    font-size: 20px;
+}
+
+.popup-btn {
+    font-family: "Nosifer";
+    font-size: 20px;
+}
