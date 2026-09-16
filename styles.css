@@ -160,12 +160,30 @@ body {
     font-size: 20px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .popup-container {
-        width: 200px;
+        width: 500px;
         height: 400px;
     }
+    .popup-container h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    .label {
+        margin-bottom: 20px;
+    }
     .input {
-        width: 200px;
+        width: 460px;
+        font-size: 10px;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+    }
+    .popup-btn {
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+    .close-icon {
+        font-size: 20px;
     }
 }
