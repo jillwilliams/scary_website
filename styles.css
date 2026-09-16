@@ -166,24 +166,25 @@ body {
         height: 400px;
     }
     .popup-container h4 {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 20px;
-        margin-top: 25px;
+        margin-top: 35px;
     }
     .label {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        font-size: 25px;
     }
     .input {
         width: 460px;
-        font-size: 10px;
-        padding: 5px 10px;
-        margin-bottom: 15px;
+        font-size: 20px;
+        padding: 10px 15px;
+        margin-bottom: 25px;
     }
     .popup-btn {
         padding: 5px 10px;
         margin-top: 10px;
     }
     .close-icon {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
