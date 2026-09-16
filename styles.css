@@ -162,8 +162,8 @@ body {
 
 @media screen and (max-width: 768px) {
     .popup-container {
-        width: 500px;
-        height: 400px;
+        width: 400px;
+        height: 450px;
     }
     .popup-container h4 {
         font-size: 25px;
@@ -175,7 +175,7 @@ body {
         font-size: 25px;
     }
     .input {
-        width: 460px;
+        width: 360px;
         font-size: 20px;
         padding: 10px 15px;
         margin-bottom: 25px;
